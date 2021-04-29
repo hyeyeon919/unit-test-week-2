@@ -9,10 +9,12 @@ public class MockService {
     private final MockRepository mockRepository;
 
     public MockService(MockRepository mockRepository) {
+
         this.mockRepository = mockRepository;
     }
 
     public List<Champion> findAllChampions() {
+
         return mockRepository.findAll();
     }
 
